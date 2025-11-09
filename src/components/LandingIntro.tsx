@@ -6,14 +6,11 @@ interface LandingIntroProps {
 }
 
 export const LandingIntro = ({ onComplete }: LandingIntroProps) => {
-  const [showSecondText, setShowSecondText] = useState(false);
 
   useEffect(() => {
-    const timer1 = setTimeout(() => setShowSecondText(true), 1500);
-    const timer2 = setTimeout(onComplete, 4500);
+    const timer = setTimeout(onComplete, 3000);
     return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
+      clearTimeout(timer);
     };
   }, [onComplete]);
 
@@ -53,24 +50,13 @@ export const LandingIntro = ({ onComplete }: LandingIntroProps) => {
       {/* Text content */}
       <div className="relative z-10 text-center px-4">
         <motion.h1
-          className="text-4xl md:text-6xl font-heading font-bold text-secondary text-glow mb-4"
+          className="text-4xl md:text-6xl font-heading font-bold text-secondary text-glow"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.25, 0.8, 0.25, 1] }}
         >
-          Welcome to Abi Tailors
+          Abi Tailors
         </motion.h1>
-        
-        {showSecondText && (
-          <motion.p
-            className="text-xl md:text-2xl font-body text-primary-foreground"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.25, 0.8, 0.25, 1] }}
-          >
-            Crafting Elegance Since Years
-          </motion.p>
-        )}
       </div>
 
       {/* Fabric curtain effect */}

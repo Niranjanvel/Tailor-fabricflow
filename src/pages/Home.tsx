@@ -132,7 +132,7 @@ const Home = () => {
                   className="border-2 border-secondary text-primary-foreground hover:bg-secondary/20 font-semibold px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:scale-105"
                 >
                   <Package className="mr-2" size={20} />
-                  Track Order
+                  Place Order
                 </Button>
               </Link>
             </motion.div>
