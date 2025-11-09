@@ -128,8 +128,7 @@ const Home = () => {
               <Link to="/track">
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="border-2 border-secondary text-primary-foreground hover:bg-secondary/20 font-semibold px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:scale-105"
+                  className="bg-secondary hover:bg-secondary/90 text-primary font-semibold px-8 py-6 text-lg rounded-xl shadow-2xl hover:shadow-secondary/50 transition-all duration-300 hover:scale-105 border-2 border-secondary"
                 >
                   <Package className="mr-2" size={20} />
                   Place Order
