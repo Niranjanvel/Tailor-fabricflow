@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['Cinzel', 'Playfair Display', 'serif'],
+        body: ['Poppins', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        gold: "hsl(var(--gold-glow))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +89,10 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 6s ease-in-out infinite",
+        "fade-in": "fadeIn 0.8s ease-out",
+        "slide-up": "slideUp 1s ease-out",
+        "glow-pulse": "glowPulse 2s ease-in-out infinite",
       },
     },
   },
